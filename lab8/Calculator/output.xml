@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20140804 16:23:50.713" generator="Robot 2.8.5 (Python 2.6.9 on linux2)">
+<suite source="/home/btucker/Calculator/keyword_driven.txt" id="s1" name="Keyword Driven">
+<test id="s1-t1" name="Push button">
+<kw type="kw" name="CalculatorLibrary.Push Button">
+<doc>Pushes the specified `button`.</doc>
+<arguments>
+<arg>1</arg>
+</arguments>
+<status status="PASS" endtime="20140804 16:23:50.824" starttime="20140804 16:23:50.823"></status>
+</kw>
+<kw type="kw" name="CalculatorLibrary.Result Should Be">
+<doc>Verifies that the current result is `expected`.</doc>
+<arguments>
+<arg>1</arg>
+</arguments>
+<status status="PASS" endtime="20140804 16:23:50.824" starttime="20140804 16:23:50.824"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="PASS" endtime="20140804 16:23:50.825" critical="yes" starttime="20140804 16:23:50.815"></status>
+</test>
+<test id="s1-t2" name="Push multiple buttons">
+<kw type="kw" name="CalculatorLibrary.Push Button">
+<doc>Pushes the specified `button`.</doc>
+<arguments>
+<arg>1</arg>
+</arguments>
+<status status="PASS" endtime="20140804 16:23:50.827" starttime="20140804 16:23:50.827"></status>
+</kw>
+<kw type="kw" name="CalculatorLibrary.Push Button">
+<doc>Pushes the specified `button`.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<status status="PASS" endtime="20140804 16:23:50.827" starttime="20140804 16:23:50.827"></status>
+</kw>
+<kw type="kw" name="CalculatorLibrary.Result Should Be">
+<doc>Verifies that the current result is `expected`.</doc>
+<arguments>
+<arg>12</arg>
+</arguments>
+<status status="PASS" endtime="20140804 16:23:50.828" starttime="20140804 16:23:50.828"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="PASS" endtime="20140804 16:23:50.828" critical="yes" starttime="20140804 16:23:50.826"></status>
+</test>
+<test id="s1-t3" name="Simple calculation">
+<kw type="kw" name="CalculatorLibrary.Push Button">
+<doc>Pushes the specified `button`.</doc>
+<arguments>
+<arg>1</arg>
+</arguments>
+<status status="PASS" endtime="20140804 16:23:50.830" starttime="20140804 16:23:50.829"></status>
+</kw>
+<kw type="kw" name="CalculatorLibrary.Push Button">
+<doc>Pushes the specified `button`.</doc>
+<arguments>
+<arg>+</arg>
+</arguments>
+<status status="PASS" endtime="20140804 16:23:50.830" starttime="20140804 16:23:50.830"></status>
+</kw>
+<kw type="kw" name="CalculatorLibrary.Push Button">
+<doc>Pushes the specified `button`.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<status status="PASS" endtime="20140804 16:23:50.831" starttime="20140804 16:23:50.831"></status>
+</kw>
+<kw type="kw" name="CalculatorLibrary.Push Button">
+<doc>Pushes the specified `button`.</doc>
+<arguments>
+<arg>=</arg>
+</arguments>
+<status status="PASS" endtime="20140804 16:23:50.831" starttime="20140804 16:23:50.831"></status>
+</kw>
+<kw type="kw" name="CalculatorLibrary.Result Should Be">
+<doc>Verifies that the current result is `expected`.</doc>
+<arguments>
+<arg>3</arg>
+</arguments>
+<status status="PASS" endtime="20140804 16:23:50.832" starttime="20140804 16:23:50.832"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="PASS" endtime="20140804 16:23:50.832" critical="yes" starttime="20140804 16:23:50.829"></status>
+</test>
+<test id="s1-t4" name="Longer calculation">
+<kw type="kw" name="CalculatorLibrary.Push Buttons">
+<doc>Pushes the specified `buttons`.</doc>
+<arguments>
+<arg>5 + 4 - 3 * 2 / 1 =</arg>
+</arguments>
+<status status="PASS" endtime="20140804 16:23:50.841" starttime="20140804 16:23:50.840"></status>
+</kw>
+<kw type="kw" name="CalculatorLibrary.Result Should Be">
+<doc>Verifies that the current result is `expected`.</doc>
+<arguments>
+<arg>3</arg>
+</arguments>
+<status status="PASS" endtime="20140804 16:23:50.841" starttime="20140804 16:23:50.841"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="PASS" endtime="20140804 16:23:50.842" critical="yes" starttime="20140804 16:23:50.839"></status>
+</test>
+<test id="s1-t5" name="Clear">
+<kw type="kw" name="CalculatorLibrary.Push Button">
+<doc>Pushes the specified `button`.</doc>
+<arguments>
+<arg>1</arg>
+</arguments>
+<status status="PASS" endtime="20140804 16:23:50.844" starttime="20140804 16:23:50.844"></status>
+</kw>
+<kw type="kw" name="CalculatorLibrary.Push Button">
+<doc>Pushes the specified `button`.</doc>
+<arguments>
+<arg>C</arg>
+</arguments>
+<status status="PASS" endtime="20140804 16:23:50.845" starttime="20140804 16:23:50.844"></status>
+</kw>
+<kw type="kw" name="CalculatorLibrary.Result Should Be">
+<doc>Verifies that the current result is `expected`.</doc>
+<arguments>
+<arg>${EMPTY}</arg>
+</arguments>
+<status status="PASS" endtime="20140804 16:23:50.845" starttime="20140804 16:23:50.845"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="PASS" endtime="20140804 16:23:50.845" critical="yes" starttime="20140804 16:23:50.842"></status>
+</test>
+<doc>Example test cases using the keyword-driven testing approach.
+
+All tests contain a workflow constructed from keywords in
+`CalculatorLibrary`. Creating new tests or editing existing
+is easy even for people without programming skills.
+
+This kind of style works well for normal test automation.
+If also business people need to understand tests, using
+_gherkin_ style may work better.</doc>
+<metadata>
+</metadata>
+<status status="PASS" endtime="20140804 16:23:50.846" starttime="20140804 16:23:50.713"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="5">Critical Tests</stat>
+<stat fail="0" pass="5">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" pass="5" id="s1" name="Keyword Driven">Keyword Driven</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
